@@ -33,7 +33,7 @@
 					</form>
 
 					<form action="/waka" method="POST">
-						<button type="submit" name="sv" value="Show velkheor">Avada</button>
+						<button type="submit">Avada</button>
 					</form>
 
 				</div>
