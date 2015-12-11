@@ -5,7 +5,7 @@
 		<div class="col-sm-offset-2 col-sm-8">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					New Task
+					Оформление заказа
 				</div>
 
 				<div class="panel-body">
@@ -13,11 +13,11 @@
 					@include('common.errors')
 
 					<!-- New Task Form -->
-					<form action="/task" method="POST" class="form-horizontal">
+					<form action="index.php/task" method="POST" class="form-horizontal">
 						{{ csrf_field() }}
 						<!-- Task Name -->
 						<div class="form-group">
-							<label for="task-name" class="col-sm-3 control-label">Tusk</label>
+							<label for="task-name" class="col-sm-3 control-label">Что хотите купить?</label>
 
 							<div class="col-sm-6">
 								<input type="text" name="name" id="task-name" class="form-control" value="{{ old('task') }}">
@@ -27,7 +27,7 @@
 						<div class="form-group">
 							<div class="col-sm-offset-3 col-sm-6">
 								<button type="submit" class="btn btn-default">
-									<i class="fa fa-plus"></i>Add Task
+									<i class="fa fa-plus"></i>Заказать
 								</button>
 							</div>
 						</div>
@@ -44,13 +44,13 @@
 			@if (count($tasks) > 0)
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						Current Tasks
+						Корзина
 					</div>
 
 					<div class="panel-body">
 						<table class="table table-striped task-table">
 							<thead>
-								<th>Taskul</th>
+								<th>Неоплаченные покупки</th>
 								<th>&nbsp;</th>
 							</thead>
 							<tbody>
@@ -60,12 +60,12 @@
 
 										<!-- Task Delete Button -->
 										<td>
-											<form action="/task/{{ $task->id }}" method="POST">
+											<form action="index.php/task/{{ $task->id }}" method="POST">
 												{{ csrf_field() }}
 												{{ method_field('DELETE') }}
 
 												<button type="submit" class="btn btn-danger">
-													<i class="fa fa-trash"></i>Delete
+													<i class="fa fa-trash"></i>Убрать заказ
 												</button>
 											</form>
 										</td>

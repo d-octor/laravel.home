@@ -7,8 +7,9 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'BaseFields' => $baseDir . '/database/migrations/2015_12_07_111218_base_fields.php',
+    'CreateDrinksTable' => $baseDir . '/database/migrations/2015_12_11_143622_create_drinks_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-    'CreateTasksTable' => $baseDir . '/database/migrations/2015_12_07_123218_create_tasks_table.php',
+    'CreateTasksTable' => $baseDir . '/database/migrations/2015_10_27_141258_create_tasks_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'ExtendsFieldTable' => $baseDir . '/database/migrations/2015_12_07_112105_extends_field_table.php',
