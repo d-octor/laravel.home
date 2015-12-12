@@ -85,3 +85,345 @@ Stack trace:
 [2015-12-11 11:46:45] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare class CreateTasksTable' in /home/wizard/dev/laravel.home/database/migrations/tap-2015_12_07_123218_create_tasks_table.php:31
 Stack trace:
 #0 {main}  
+[2015-12-11 12:51:56] local.ERROR: exception 'InvalidArgumentException' with message 'Command "migration" is not defined.
+
+Did you mean one of these?
+    migrate
+    migrate:refresh
+    migrate:status
+    migrate:reset
+    migrate:rollback
+    migrate:install
+    make:migration' in /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php:511
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(186): Symfony\Component\Console\Application->find('migration')
+#1 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2015-12-11 12:52:12] local.ERROR: exception 'RuntimeException' with message 'Not enough arguments (missing: "name").' in /home/wizard/dev/laravel.home/vendor/symfony/console/Input/Input.php:84
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/symfony/console/Command/Command.php(251): Symfony\Component\Console\Input\Input->validate()
+#1 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(838): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateMakeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 {main}  
+[2015-12-11 12:53:01] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined function create()' in /home/wizard/dev/laravel.home/database/migrations/2015_12_11_122123_employees.php:15
+Stack trace:
+#0 {main}  
+[2015-12-11 12:53:41] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Database\Schema\Blueprint::timestaps()' in /home/wizard/dev/laravel.home/database/migrations/2015_12_11_122123_employees.php:20
+Stack trace:
+#0 {main}  
+[2015-12-11 13:28:43] local.ERROR: exception 'RuntimeException' with message 'The "-t" option does not exist.' in /home/wizard/dev/laravel.home/vendor/symfony/console/Input/ArgvInput.php:124
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/symfony/console/Input/ArgvInput.php(105): Symfony\Component\Console\Input\ArgvInput->parseShortOptionSet('table-employees')
+#1 /home/wizard/dev/laravel.home/vendor/symfony/console/Input/ArgvInput.php(84): Symfony\Component\Console\Input\ArgvInput->parseShortOption('-table-employee...')
+#2 /home/wizard/dev/laravel.home/vendor/symfony/console/Input/Input.php(61): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 /home/wizard/dev/laravel.home/vendor/symfony/console/Command/Command.php(221): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(838): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateMakeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 {main}  
+[2015-12-11 14:12:13] local.ERROR: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`larashop`.`#sql-426_42`, CONSTRAINT `employees_dept_id_foreign` FOREIGN KEY (`dept_id`) REFERENCES `depts` (`id`) ON DELETE CASCADE)' in /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php:390
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(390): PDOStatement->execute(Array)
+#1 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(644): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'alter table `em...', Array)
+#2 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(611): Illuminate\Database\Connection->runQueryCallback('alter table `em...', Array, Object(Closure))
+#3 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(391): Illuminate\Database\Connection->run('alter table `em...', Array, Object(Closure))
+#4 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(83): Illuminate\Database\Connection->statement('alter table `em...')
+#5 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(191): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#6 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(116): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#7 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(219): Illuminate\Database\Schema\Builder->table('employees', Object(Closure))
+#8 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#9 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Schema::table('employees', Object(Closure))
+#10 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(135): AddDeptIdInEmployees->up()
+#11 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(112): Illuminate\Database\Migrations\Migrator->runUp('2015_12_11_1407...', 7, false)
+#12 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(85): Illuminate\Database\Migrations\Migrator->runMigrationList(Array, false)
+#13 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(74): Illuminate\Database\Migrations\Migrator->run('/home/wizard/de...', false)
+#14 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#15 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Container/Container.php(503): call_user_func_array(Array, Array)
+#16 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(150): Illuminate\Container\Container->call(Array)
+#17 /home/wizard/dev/laravel.home/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(838): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 {main}
+
+Next exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`larashop`.`#sql-426_42`, CONSTRAINT `employees_dept_id_foreign` FOREIGN KEY (`dept_id`) REFERENCES `depts` (`id`) ON DELETE CASCADE) (SQL: alter table `employees` add constraint employees_dept_id_foreign foreign key (`dept_id`) references `depts` (`id`) on delete cascade)' in /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php:651
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(611): Illuminate\Database\Connection->runQueryCallback('alter table `em...', Array, Object(Closure))
+#1 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(391): Illuminate\Database\Connection->run('alter table `em...', Array, Object(Closure))
+#2 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(83): Illuminate\Database\Connection->statement('alter table `em...')
+#3 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(191): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#4 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(116): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#5 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(219): Illuminate\Database\Schema\Builder->table('employees', Object(Closure))
+#6 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#7 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Schema::table('employees', Object(Closure))
+#8 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(135): AddDeptIdInEmployees->up()
+#9 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(112): Illuminate\Database\Migrations\Migrator->runUp('2015_12_11_1407...', 7, false)
+#10 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(85): Illuminate\Database\Migrations\Migrator->runMigrationList(Array, false)
+#11 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(74): Illuminate\Database\Migrations\Migrator->run('/home/wizard/de...', false)
+#12 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#13 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Container/Container.php(503): call_user_func_array(Array, Array)
+#14 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(150): Illuminate\Container\Container->call(Array)
+#15 /home/wizard/dev/laravel.home/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(838): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 {main}  
+[2015-12-11 14:14:13] local.ERROR: exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'dept_id'' in /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php:390
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(390): PDOStatement->execute(Array)
+#1 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(644): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'alter table `em...', Array)
+#2 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(611): Illuminate\Database\Connection->runQueryCallback('alter table `em...', Array, Object(Closure))
+#3 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(391): Illuminate\Database\Connection->run('alter table `em...', Array, Object(Closure))
+#4 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(83): Illuminate\Database\Connection->statement('alter table `em...')
+#5 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(191): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#6 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(116): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#7 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(219): Illuminate\Database\Schema\Builder->table('employees', Object(Closure))
+#8 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#9 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Schema::table('employees', Object(Closure))
+#10 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(135): AddDeptIdInEmployees->up()
+#11 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(112): Illuminate\Database\Migrations\Migrator->runUp('2015_12_11_1407...', 7, false)
+#12 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(85): Illuminate\Database\Migrations\Migrator->runMigrationList(Array, false)
+#13 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(74): Illuminate\Database\Migrations\Migrator->run('/home/wizard/de...', false)
+#14 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#15 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Container/Container.php(503): call_user_func_array(Array, Array)
+#16 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(150): Illuminate\Container\Container->call(Array)
+#17 /home/wizard/dev/laravel.home/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(838): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 {main}
+
+Next exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'dept_id' (SQL: alter table `employees` add `dept_id` int unsigned not null after `gender`)' in /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php:651
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(611): Illuminate\Database\Connection->runQueryCallback('alter table `em...', Array, Object(Closure))
+#1 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(391): Illuminate\Database\Connection->run('alter table `em...', Array, Object(Closure))
+#2 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(83): Illuminate\Database\Connection->statement('alter table `em...')
+#3 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(191): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#4 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(116): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#5 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(219): Illuminate\Database\Schema\Builder->table('employees', Object(Closure))
+#6 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#7 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Schema::table('employees', Object(Closure))
+#8 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(135): AddDeptIdInEmployees->up()
+#9 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(112): Illuminate\Database\Migrations\Migrator->runUp('2015_12_11_1407...', 7, false)
+#10 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(85): Illuminate\Database\Migrations\Migrator->runMigrationList(Array, false)
+#11 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(74): Illuminate\Database\Migrations\Migrator->run('/home/wizard/de...', false)
+#12 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#13 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Container/Container.php(503): call_user_func_array(Array, Array)
+#14 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(150): Illuminate\Container\Container->call(Array)
+#15 /home/wizard/dev/laravel.home/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(838): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 {main}  
+[2015-12-11 20:04:40] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in /home/wizard/dev/laravel.home/database/migrations/2015_12_11_194324_create_products_table.php:27
+Stack trace:
+#0 {main}  
+[2015-12-11 20:04:56] local.ERROR: exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'dept_id'' in /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php:390
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(390): PDOStatement->execute(Array)
+#1 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(644): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'alter table `em...', Array)
+#2 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(611): Illuminate\Database\Connection->runQueryCallback('alter table `em...', Array, Object(Closure))
+#3 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(391): Illuminate\Database\Connection->run('alter table `em...', Array, Object(Closure))
+#4 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(83): Illuminate\Database\Connection->statement('alter table `em...')
+#5 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(191): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#6 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(116): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#7 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(219): Illuminate\Database\Schema\Builder->table('employees', Object(Closure))
+#8 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#9 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Schema::table('employees', Object(Closure))
+#10 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(135): AddDeptIdInEmployees->up()
+#11 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(112): Illuminate\Database\Migrations\Migrator->runUp('2015_12_11_1407...', 7, false)
+#12 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(85): Illuminate\Database\Migrations\Migrator->runMigrationList(Array, false)
+#13 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(74): Illuminate\Database\Migrations\Migrator->run('/home/wizard/de...', false)
+#14 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#15 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Container/Container.php(503): call_user_func_array(Array, Array)
+#16 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(150): Illuminate\Container\Container->call(Array)
+#17 /home/wizard/dev/laravel.home/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(838): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 {main}
+
+Next exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'dept_id' (SQL: alter table `employees` add `dept_id` int unsigned not null after `gender`)' in /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php:651
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(611): Illuminate\Database\Connection->runQueryCallback('alter table `em...', Array, Object(Closure))
+#1 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(391): Illuminate\Database\Connection->run('alter table `em...', Array, Object(Closure))
+#2 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(83): Illuminate\Database\Connection->statement('alter table `em...')
+#3 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(191): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#4 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(116): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#5 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(219): Illuminate\Database\Schema\Builder->table('employees', Object(Closure))
+#6 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#7 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Schema::table('employees', Object(Closure))
+#8 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(135): AddDeptIdInEmployees->up()
+#9 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(112): Illuminate\Database\Migrations\Migrator->runUp('2015_12_11_1407...', 7, false)
+#10 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(85): Illuminate\Database\Migrations\Migrator->runMigrationList(Array, false)
+#11 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(74): Illuminate\Database\Migrations\Migrator->run('/home/wizard/de...', false)
+#12 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#13 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Container/Container.php(503): call_user_func_array(Array, Array)
+#14 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(150): Illuminate\Container\Container->call(Array)
+#15 /home/wizard/dev/laravel.home/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(838): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 {main}  
+[2015-12-12 12:47:31] local.ERROR: exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'larashop.brands' doesn't exist' in /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php:390
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(390): PDO->prepare('insert into `br...')
+#1 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(644): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `br...', Array)
+#2 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(611): Illuminate\Database\Connection->runQueryCallback('insert into `br...', Array, Object(Closure))
+#3 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(391): Illuminate\Database\Connection->run('insert into `br...', Array, Object(Closure))
+#4 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(347): Illuminate\Database\Connection->statement('insert into `br...', Array)
+#5 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1783): Illuminate\Database\Connection->insert('insert into `br...', Array)
+#6 /home/wizard/dev/laravel.home/database/seeds/BrandsTableSeeder.php(14): Illuminate\Database\Query\Builder->insert(Array)
+#7 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(61): BrandsTableSeeder->run()
+#8 [internal function]: Illuminate\Database\Console\Seeds\SeedCommand->fire()
+#9 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Container/Container.php(503): call_user_func_array(Array, Array)
+#10 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(150): Illuminate\Container\Container->call(Array)
+#11 /home/wizard/dev/laravel.home/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(838): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Seeds\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 {main}
+
+Next exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'larashop.brands' doesn't exist (SQL: insert into `brands` (`name`) values (ACNE))' in /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php:651
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(611): Illuminate\Database\Connection->runQueryCallback('insert into `br...', Array, Object(Closure))
+#1 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(391): Illuminate\Database\Connection->run('insert into `br...', Array, Object(Closure))
+#2 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(347): Illuminate\Database\Connection->statement('insert into `br...', Array)
+#3 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1783): Illuminate\Database\Connection->insert('insert into `br...', Array)
+#4 /home/wizard/dev/laravel.home/database/seeds/BrandsTableSeeder.php(14): Illuminate\Database\Query\Builder->insert(Array)
+#5 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(61): BrandsTableSeeder->run()
+#6 [internal function]: Illuminate\Database\Console\Seeds\SeedCommand->fire()
+#7 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Container/Container.php(503): call_user_func_array(Array, Array)
+#8 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(150): Illuminate\Container\Container->call(Array)
+#9 /home/wizard/dev/laravel.home/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(838): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Seeds\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 {main}  
+[2015-12-12 12:48:05] local.ERROR: exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'dept_id'' in /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php:390
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(390): PDOStatement->execute(Array)
+#1 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(644): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'alter table `em...', Array)
+#2 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(611): Illuminate\Database\Connection->runQueryCallback('alter table `em...', Array, Object(Closure))
+#3 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(391): Illuminate\Database\Connection->run('alter table `em...', Array, Object(Closure))
+#4 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(83): Illuminate\Database\Connection->statement('alter table `em...')
+#5 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(191): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#6 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(116): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#7 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(219): Illuminate\Database\Schema\Builder->table('employees', Object(Closure))
+#8 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#9 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Schema::table('employees', Object(Closure))
+#10 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(135): AddDeptIdInEmployees->up()
+#11 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(112): Illuminate\Database\Migrations\Migrator->runUp('2015_12_11_1407...', 7, false)
+#12 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(85): Illuminate\Database\Migrations\Migrator->runMigrationList(Array, false)
+#13 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(74): Illuminate\Database\Migrations\Migrator->run('/home/wizard/de...', false)
+#14 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#15 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Container/Container.php(503): call_user_func_array(Array, Array)
+#16 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(150): Illuminate\Container\Container->call(Array)
+#17 /home/wizard/dev/laravel.home/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(838): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 {main}
+
+Next exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'dept_id' (SQL: alter table `employees` add `dept_id` int unsigned not null after `gender`)' in /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php:651
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(611): Illuminate\Database\Connection->runQueryCallback('alter table `em...', Array, Object(Closure))
+#1 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(391): Illuminate\Database\Connection->run('alter table `em...', Array, Object(Closure))
+#2 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(83): Illuminate\Database\Connection->statement('alter table `em...')
+#3 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(191): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#4 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(116): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#5 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(219): Illuminate\Database\Schema\Builder->table('employees', Object(Closure))
+#6 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#7 /home/wizard/dev/laravel.home/database/migrations/2015_12_11_140746_add_dept_id_in_employees.php(20): Illuminate\Support\Facades\Schema::table('employees', Object(Closure))
+#8 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(135): AddDeptIdInEmployees->up()
+#9 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(112): Illuminate\Database\Migrations\Migrator->runUp('2015_12_11_1407...', 7, false)
+#10 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(85): Illuminate\Database\Migrations\Migrator->runMigrationList(Array, false)
+#11 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(74): Illuminate\Database\Migrations\Migrator->run('/home/wizard/de...', false)
+#12 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#13 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Container/Container.php(503): call_user_func_array(Array, Array)
+#14 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(150): Illuminate\Container\Container->call(Array)
+#15 /home/wizard/dev/laravel.home/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(838): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 {main}  
+[2015-12-12 12:48:11] local.ERROR: exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'larashop.brands' doesn't exist' in /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php:390
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(390): PDO->prepare('insert into `br...')
+#1 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(644): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `br...', Array)
+#2 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(611): Illuminate\Database\Connection->runQueryCallback('insert into `br...', Array, Object(Closure))
+#3 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(391): Illuminate\Database\Connection->run('insert into `br...', Array, Object(Closure))
+#4 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(347): Illuminate\Database\Connection->statement('insert into `br...', Array)
+#5 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1783): Illuminate\Database\Connection->insert('insert into `br...', Array)
+#6 /home/wizard/dev/laravel.home/database/seeds/BrandsTableSeeder.php(14): Illuminate\Database\Query\Builder->insert(Array)
+#7 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(61): BrandsTableSeeder->run()
+#8 [internal function]: Illuminate\Database\Console\Seeds\SeedCommand->fire()
+#9 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Container/Container.php(503): call_user_func_array(Array, Array)
+#10 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(150): Illuminate\Container\Container->call(Array)
+#11 /home/wizard/dev/laravel.home/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(838): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Seeds\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 {main}
+
+Next exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'larashop.brands' doesn't exist (SQL: insert into `brands` (`name`) values (ACNE))' in /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php:651
+Stack trace:
+#0 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(611): Illuminate\Database\Connection->runQueryCallback('insert into `br...', Array, Object(Closure))
+#1 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(391): Illuminate\Database\Connection->run('insert into `br...', Array, Object(Closure))
+#2 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Connection.php(347): Illuminate\Database\Connection->statement('insert into `br...', Array)
+#3 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1783): Illuminate\Database\Connection->insert('insert into `br...', Array)
+#4 /home/wizard/dev/laravel.home/database/seeds/BrandsTableSeeder.php(14): Illuminate\Database\Query\Builder->insert(Array)
+#5 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(61): BrandsTableSeeder->run()
+#6 [internal function]: Illuminate\Database\Console\Seeds\SeedCommand->fire()
+#7 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Container/Container.php(503): call_user_func_array(Array, Array)
+#8 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(150): Illuminate\Container\Container->call(Array)
+#9 /home/wizard/dev/laravel.home/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(838): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Seeds\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /home/wizard/dev/laravel.home/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/wizard/dev/laravel.home/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/wizard/dev/laravel.home/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 {main}  
