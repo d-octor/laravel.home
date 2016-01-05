@@ -17,19 +17,30 @@ use Illuminate\Http\Request;
 /**
  * Show Task Dashboard
  */
-Route::get('/', function () {
+
+/*Route::get('/insert', function() {
+  App\Category::create(array('name' => 'Music'))
+  return 'category added';
+});*/
+
+/*Route::get('/', function () {
     return view('tasks', [
     	'tasks' => Task::orderBy('created_at', 'asc')->get()
     ]);
-});
+});*/
 
 /*Route::get('/hello', function() {
   return 'Hello World';
 });*/
+
+Route::get('/', function () {
+  return view('welcome');
+});
+
 Route::get('hello', 'Hello@index');
 Route::get('/hello/{name}', 'Hello@show');
 
-Route::get('/', 'Front@index');
+//Route::get('/', 'Front@index');
 Route::get('/products', 'Front@products');
 Route::get('/products/details/{id}','Front@product_details');
 Route::get('/products/categories','Front@product_categories');
